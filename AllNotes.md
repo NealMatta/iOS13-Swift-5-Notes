@@ -10,7 +10,7 @@
 ## 18. A Walkthrough of the Xcode Development Environment
 
 -   The document outline (appears when you click on an object that is in a storyboard) shows the different objects on the screen. This is basically where the layers exist
-    ![Document Outline](../Images/section-2/document-outline.png)
+    ![Document Outline](./Images/section-2/document-outline.png)
 -   Look at the [XCode Shortcuts](https://swifteducation.github.io/assets/pdfs/XcodeKeyboardShortcuts.pdf) to improve efficiency
 -   Right hand pane primarily used for different properties
 

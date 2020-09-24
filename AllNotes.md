@@ -49,8 +49,14 @@
 -   Buttons exist in the code file as actions. They create functions when an action (even in the properties) occurs
 -   IB = Interface Builder
 
-## 42. String Interpolation
+---
 
     print("Text \(2+3) Text")
 
 -   The backslash allows for code to be inserted mid text
+-   Variables are pretty consistent to other coding languages. Swift gives the user the ability to define their variable type using typescript notation
+-   Range operator:
+    -   '...' --> Inclusive of upper bound
+    -   '..<' --> Not including upper bound
+
+# Section 5 - Swift Programming Basics Challenge

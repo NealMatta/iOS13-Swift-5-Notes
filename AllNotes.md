@@ -52,3 +52,5 @@
 ## 42. String Interpolation
 
     print("Text \(2+3) Text")
+
+-   The backslash allows for code to be inserted mid text

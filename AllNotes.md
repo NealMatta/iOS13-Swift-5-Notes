@@ -59,4 +59,31 @@
     -   '...' --> Inclusive of upper bound
     -   '..<' --> Not including upper bound
 
-# Section 5 - Swift Programming Basics Challenge
+# Section 6 - Auto Layout and Responsive UIs
+
+## 66. Setting Constraints and working with the Safe Area
+
+-   These are the rules on how objects are laid out
+-   ![constraints](./Images/section-6/constraints.png)
+-   Clicking on the bottom right after selecting an object from the object viewer allows you to add constraints. In this case, we are adding constraints to the background image to be streched across the entire screen
+-   'Safe Area' is a term that makes sure there is space for the home button and the swipe up feature. This is used to make sure that there are no buttons or CTA's in those areas. For backgrounds, we should strech it out all the way because there will be no interaction in those areas
+-   For this situation, you want to change the Leading Alignment Constraint second item to Superview.trailing / Leading
+
+## 67. How to use Alignment and Pinning
+
+-   Constraints are like pinning an element by adding cosntraints defining the distance between our element and the containing view
+-   Alignments are primarily used for vertical and horizantal aligment
+
+## 68. Working with containers and subviews
+
+-   We use containers to create new superviews in order to section off pieces of the screen
+    -   Three ways to embed objects into a view:
+        -   Insert an object called 'uiview' and realign values in the object viewer accordingly
+        -   Click the objects you want to embed, click editor --> Embed in --> View
+        -   Click object you want to embed, at the bottom right click on this small icon, embed, in view
+
+## 69. Stack Views
+
+-   In order to use alignment within containers, you need to use stack views. Reason being is because the containers need to be aligned as well
+-   Stack view also needs constraints but this usually will be the entire screen safe area
+-   Fixed width constraints are like setting px size in HTML. You can use ≥ width size to make sure min width is a thing

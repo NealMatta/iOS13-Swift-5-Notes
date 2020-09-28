@@ -87,3 +87,25 @@
 -   In order to use alignment within containers, you need to use stack views. Reason being is because the containers need to be aligned as well
 -   Stack view also needs constraints but this usually will be the entire screen safe area
 -   Fixed width constraints are like setting px size in HTML. You can use ≥ width size to make sure min width is a thing
+
+# Section 7 - Using and Understanding Apple Documentation
+
+-   it's possible to link up multiple buttons to one IB Action
+-   When deleting and renaming IBActions, make sure to reference this [link](https://stackoverflow.com/questions/24523086/xcode-interface-builder-correct-way-to-delete-rename-miswired-iboutlets-ib) to correctly get rid of the connections
+-   '?' are optional strings. '!' are used for values that exist for sure. Need to do more research into optional strings
+
+### Optionals
+
+-   an optional data type allows 'nil' to be a value for that variable or constant
+-   You should always check if an optional contains nil before using it
+-   Before you can access the object of an optional variable or constant, you must first "unwrap" the optional. This means using the **'!'** character
+-   There are different ways to check if an object exists (Is equal to nil)
+    -   If Statement
+        -   This is super tedious as you'd need to have an if statement for everything
+    -   Optional Binding
+        -   `if let actualPresent = present { print(actualPresent.surprise())}`
+        -   Present is an optional in this case and if it is not nil, then actualPresent is assigned to deconstructed variable
+    -   Optional Chaining
+        -   `present?.surprise()`
+        -   Basically the if statement in better syntax. Only if it is not nil, then do we run the code
+-   Why do we use this? Forces the programmer to be more specific with their code

@@ -109,3 +109,10 @@
         -   `present?.surprise()`
         -   Basically the if statement in better syntax. Only if it is not nil, then do we run the code
 -   Why do we use this? Forces the programmer to be more specific with their code
+
+# Section 8 - Control flow and Optionals
+
+-   You can manipulate the font size so it fits all screens and does not truncate by clicking on the label, and under properties, changing authoshrink to minimun font size and settign lines to 0
+-   Equality operator is `==` double equal sign. Else if is `else if`. Most of the equality operators are the same as Python
+-   Switch statements and dictionaries are also very similar to Python and other coding language
+-   When you provide a key as a piece of text to retrieve an item out of a dictionary, you are provided with an optional. The reason being is because the key does not actually exist in the dict and a `nil` value is returned

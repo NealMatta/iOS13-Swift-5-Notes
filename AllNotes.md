@@ -116,3 +116,30 @@
 -   Equality operator is `==` double equal sign. Else if is `else if`. Most of the equality operators are the same as Python
 -   Switch statements and dictionaries are also very similar to Python and other coding language
 -   When you provide a key as a piece of text to retrieve an item out of a dictionary, you are provided with an optional. The reason being is because the key does not actually exist in the dict and a `nil` value is returned
+
+# Section 9 - iOS App Design Patterns and Code Structuring
+
+-   Creating structs is the same as other coding languages
+    ![struct](./Images/section-9/struct.png)
+-   Constructors are changed to initializers and the keyword is `init` for this. When initializng, you need to add the parameter names
+-   the `self` keyword refers to the eventual object that is created
+
+### MVC Design Pattern
+
+-   MVC Stands for Model View Controller
+    -   Model
+        -   This is the data & Logic
+    -   View
+        -   What goes onto the user interface
+    -   Controller
+        -   Mediator
+        -   Should only be responsible for telling the other two what to do and responding to the changes in the view
+-   View and Model never directly talk to each other. Always through the controller only
+-   To make it so that I do not need to pass in the parameter name, then I need to create an external parameter name using the '\_' character in the function creation
+-   When self is created in the background, it is created with the `let` keyword, which makes it immutable. So trying to change variables defined in a struct within the struct means the variables are immutable
+-   If we're making a method that modifies one of the properties within the struct, then we have to mark the method as `mutating`
+
+### Functions
+
+-   To return something from a function, need to use a return type in the fucnction declaration
+    ![function](./Images/section-9/function.png)

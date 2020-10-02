@@ -145,3 +145,34 @@
     ![function](./Images/section-9/function.png)
 
 # Section 11 - Advanced Swift Programming - Classes, Inheritance, & Advanced Optionals
+
+-   It's common practice to get an outlet and action from a slider or object. This way you can get access to the value and also know when the value changes
+
+## 132 - 133. Classes, Inheritrance, and Structs vs Classes
+
+-   The biggest difference between classes and structs is that classes can be inherited from a superclass
+-   A superclass is the parent and a subclass is the child
+-   Again, this is pretty basic to other languages. Classes can inherit from one another
+-   Subclasses have the ability to override the parent class functions by using the `override` keywords
+-   With overriding though, the functions have the ability to reference the parent class first and then add to it
+    ![override](./Images/section-11/override.png)
+-   classes are **passed by reference**. Making a copy of an existing class makes a shallow copy basically. Structs are **passed by value**
+-   Apple recommends using a struct over classes
+-   Structs are immutable and passed by value while classes are passed by reference and utilize inheritrance
+
+## 135. How to create UI Programatically and Pass data between ViewControllers
+
+-   ## It is possible to create layouts programatically. But honestly why would this be done?
+-   When creating another viewController, you can basically treat it like a class. This means I can assign values after making an instance of the class
+-   The file type should be cocoa touch class when creating a viewController for an existing screen. Basically a shortcut to getting setup with view controllers instead of having to create the class when needed and whatever
+    ![new view controller](./Images/section-11/newViewController.png)
+-   To link up a newly created view controller to a new class, you need to go the identity inspector and choose the class to equal the new controller class
+
+## 136. Segues and Navigation for Multi-screen Apps
+
+![Segue](./Images/section-11/segue.png)
+
+-   To create a segue between the screens, you have to hold the control key, drag from where you want to start to where you want to go
+    -   Need to write something to identify it. This identifier is then used to make sure that the screens are in correct flow
+        ![Segue](./Images/section-11/segue-2.png)
+    -   Need to create a function like this. The reason we have an if statement is because there can be multiple segues from the same screen. We need to make sure that we are directing to the right screens.

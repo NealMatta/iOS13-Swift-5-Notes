@@ -100,6 +100,7 @@
 -   You should always check if an optional contains nil before using it
 -   Before you can access the object of an optional variable or constant, you must first "unwrap" the optional. This means using the **'!'** character
 -   There are different ways to check if an object exists (Is equal to nil)
+
     -   If Statement
         -   This is super tedious as you'd need to have an if statement for everything
     -   Optional Binding
@@ -108,6 +109,13 @@
     -   Optional Chaining
         -   `present?.surprise()`
         -   Basically the if statement in better syntax. Only if it is not nil, then do we run the code
+    -   Nil Coalescing Operator
+        -   `optional ?? default value`
+        -   If the optoinal is not nil, use the optional, if it is optional, use the default value
+    -   Optional Chaining
+        -   `optional?.property`
+        -   We want to access the properties and methods. This is used for classes and structs
+
 -   Why do we use this? Forces the programmer to be more specific with their code
 
 # Section 8 - Control flow and Optionals
@@ -176,3 +184,4 @@
     -   Need to write something to identify it. This identifier is then used to make sure that the screens are in correct flow
         ![Segue](./Images/section-11/segue-2.png)
     -   Need to create a function like this. The reason we have an if statement is because there can be multiple segues from the same screen. We need to make sure that we are directing to the right screens.
+-   The `view` property is always accessible

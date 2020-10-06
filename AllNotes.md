@@ -185,3 +185,9 @@
         ![Segue](./Images/section-11/segue-2.png)
     -   Need to create a function like this. The reason we have an if statement is because there can be multiple segues from the same screen. We need to make sure that we are directing to the right screens.
 -   The `view` property is always accessible
+
+# Section 12 - Advanced Swift Programming Challenge
+
+![Link Class](./Images/section-11/link-class.png)
+
+-   This is how to link classes to new view controllers

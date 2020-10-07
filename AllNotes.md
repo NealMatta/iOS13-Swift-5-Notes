@@ -188,6 +188,26 @@
 
 # Section 12 - Advanced Swift Programming Challenge
 
-![Link Class](./Images/section-11/link-class.png)
+![Link Class](./Images/section-12/link-class.png)
 
 -   This is how to link classes to new view controllers
+
+# Section 13 - Networking, JSON Parsing, APIs and Core Location
+
+-   Create a new color set to make sure new colors are adjustable to light and dark mode
+-   Can use vector images to replace background images. Vector images don't lose their pixel value
+
+## 155. Learn to use UITextField
+
+-   In order to get access to the keyboard, you have to import the UITextFieldDelegate
+    -   UITextFieldDelegate allows you to manage the editing and validation of the text within the textField
+-   When doing this, you need to set the delegate to self in order to get access to commands such as when the user clicks return on the keyboard
+
+## 156. Protocols
+
+-   Protocols are essentialy like certificates. Wherever they are called, that class or struct must be able to execute whatever is required within the protocol
+-   Protocols can be used as a data type
+
+## 157. The Design Delegate Pattern
+
+-

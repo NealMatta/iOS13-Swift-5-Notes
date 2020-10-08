@@ -207,7 +207,40 @@
 
 -   Protocols are essentialy like certificates. Wherever they are called, that class or struct must be able to execute whatever is required within the protocol
 -   Protocols can be used as a data type
+-   By convention, we create the protocol in the same file as the class that will use the protocol
+-   Protocols with default implementations (default using extensions) do not NEED to be created
 
-## 157. The Design Delegate Pattern
+## 161. Closures
 
--
+-   To pass a function into another function, you would need to pass in the input parameters and the return value as a parameter
+-   `func calculator (n1: Int, n2: Int, operation: (Int, Int) -> Int) -> Int`
+-   Closures are anonymous functions
+    -   Just remove the `func` keyword and name of the function, move the open bracket to the front of the function, and place the keyword `in` after the return value
+        -   Ex. `{ (n1: Int, n2: Int) -> Int in ... }`
+-   Since Swift can infer the data type from the variable, in closures, we actually don't need to pass in the data type of the parameters or the return value
+    -   Going even further, you don't need to have the `return` keyword
+    -   These are the same things but I don't need to go this deep
+        ![Closures](./Images/section-13/closures.png)
+-   Closures allow you to package anonymous blocks of functionality and pass it around in your code
+-   `{ (parameters) -> return type in statements }`
+-   When calling functions within closures, you need to use the `self` keyword
+
+## 162. JSON Decoding
+
+-   JSON must be `Decodable` - A type that can decode itself from an external representation
+    ![Decodable](./Images/section-13/decodable.png)
+
+## 163. Computed Properties
+
+-   Computed properties can be used instead of get functions basically. Syntax is `var <name> : <property type> { prreturn <value> }`
+
+## 167. Updating the UI using the DispatchQueue
+
+-   This is a specfic example that I'll eventually run into. Basically, when we're in a completion handler, we cannot update the UI. Instead, we must dispatch the call to update the label text to the main thread
+
+## 168. Extensions and Default Implementations for Protocols
+
+-   Extensions allow you to extend whatever properties or functions you want
+    ![Extension](./Images/section-13/extension.png)
+-   This gives us the capability to extend the double type so that we can round it to a certain place
+-   Instead of adding all delegates to a single class and exteneding that class, you can create extensions of classes and add a single delegate to each extension. This allows for much cleaner code

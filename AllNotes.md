@@ -266,3 +266,43 @@
 
 -   If I run into the issue with a pod, make sure that I am using the latest released version of it. I can check that out in the Github link that follows with it
 -   To remove a pod, you have to remove the file from the Podfile and run `pod install`
+
+## 201. Using a constants file and understanding the static keyword
+
+-   Static variables should be created within a Constants struct as it allows for them to be called without having to create an instance
+-   Static turns the properties from an instance property into a type property
+
+## 202. How to use a UITableView and Create a Message Model
+
+-   Created from the object manager, you also need to add a UITableView Cell that will act as a prototype cell
+-   Prototype cells need an identifier, like segues, that will be used to reference the prototype cell
+-   When using the IBOutlet from TableView, you need to 'import' the `UITableViewDataSource` protocol and write the defined functions
+    ![UITableViewDataSource](./Images/section-15/UITableViewDataSource.png)
+-   The `UITableViewDataSource` is responsbile for populating the UITableView while the `UITableViewDelegate` is responsible for the interaction of elements within the tableView
+
+## 203. Customising Cells in a TableView using a .xib file
+
+-   When creating a new cell, make sure it is of type CocoaTouch and is a SubClass of UITableViewCell
+-   The .xib file is the design file used
+-   After creating a custom .xib file, you need to register it in the ViewDidLoad of whatever class uses it
+
+## 204. Casting 'as? as! as is' and understanding 'Any'
+
+-   `is` keyword is the same thing as using `type()` to determing the type of the object. Can be used in an if statement
+-   `as!` is when you force downcast something to a subclass. Like optionals, you need to be certain that object can be cast down properly
+-   `as?` is optional forced downcasting. You'd have to use optional chaining or binding to get the optional into it's true form
+-   `as` turns the object into it's super class. This is called Upcasting (Goes from Fish to Animal where Fish a subclass of Animal)
+-   `Any`, `AnyObject`, and `NSObject` can be any type that can be used for literally anything. `Any` is all objects, `AnyObject` is all objects derived from classes, and `NSObject` are foundation objects
+
+## 206. Retrieving Data from Firestore
+
+-   If you try and receive data from Firebase in a closure, it depends on the internet connection to actually get back documents on time
+-   `DispatchQueue.main.async { self.tableView.reloadData() }` | You should use DispatchQueue to fetch the main thread to actually update the data
+
+## 207. Listening for Updates on Firestore
+
+-   Firebase has the option to listen to updates to the Firestore and update hte messages on realtime
+
+## 210. Finishing Touches
+
+-   Use `viewWillAppear` and `viewWillDissapear` to hide and show the navigation bar

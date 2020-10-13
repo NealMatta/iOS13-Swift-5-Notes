@@ -244,3 +244,25 @@
     ![Extension](./Images/section-13/extension.png)
 -   This gives us the capability to extend the double type so that we can round it to a certain place
 -   Instead of adding all delegates to a single class and exteneding that class, you can create extensions of classes and add a single delegate to each extension. This allows for much cleaner code
+
+# Section 15 - Firebase Cloud firestore, Tableviews, and Cocoapod Dependencies
+
+## 187. Navigation Controller Stacks and Segues
+
+-   Table views are used for lists
+    -   This can be used for the queued up songs
+-   Creating a navigation controller: Select the initial view controller. From the editor tab, go to embed in, then navigation controller.
+-   Segues that come off buttons do not need an identifier. Segues that move from screens (Think login and register) need an identifier that can later be called with the code
+
+## 191. Introduction to 3rd Party Libraries
+
+-   Cocoapods.org is literally just node js packages
+
+## 193. How to install a Pod to your project
+
+-   Always make sure to use the .xcworkspace extension rather than the .xcodeproj file
+
+## 194. Potential Problems with Pod Installation
+
+-   If I run into the issue with a pod, make sure that I am using the latest released version of it. I can check that out in the Github link that follows with it
+-   To remove a pod, you have to remove the file from the Podfile and run `pod install`

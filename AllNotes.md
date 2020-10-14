@@ -312,6 +312,7 @@
 
 -   **viewDidLoad()** is only called once in the beginning. The view gets loaded up
     -   The IBOutlets, IBActions are connected up and now accessible
+    -   These only get triggered again after the screen completetly goes away
 -   The next method is **viewWillAppear()**. This is called just before the view appears on screen
     -   Good time point to hide/show certain components
 -   **viewDidAppear()** is when the view is alreday on screen

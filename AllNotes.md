@@ -306,3 +306,17 @@
 ## 210. Finishing Touches
 
 -   Use `viewWillAppear` and `viewWillDissapear` to hide and show the navigation bar
+-   ![HideShow](./Images/section-15/hideShow.png)
+
+## 211. The ViewController Lifecycle Explained
+
+-   **viewDidLoad()** is only called once in the beginning. The view gets loaded up
+    -   The IBOutlets, IBActions are connected up and now accessible
+-   The next method is **viewWillAppear()**. This is called just before the view appears on screen
+    -   Good time point to hide/show certain components
+-   **viewDidAppear()** is when the view is alreday on screen
+    -   Good time point to start a countdown timer or animation. Something that you want to the user to see
+-   **viewWillDissapear()**
+    -   A user may do something to trigger this next method. If a user dismesses the view or something of the sort
+-   **viewDidDissapear()**
+    -   The last moment before you are able to change anything on the screen before it's gone.

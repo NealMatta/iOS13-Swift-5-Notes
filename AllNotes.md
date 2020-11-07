@@ -321,3 +321,40 @@
     -   A user may do something to trigger this next method. If a user dismesses the view or something of the sort
 -   **viewDidDissapear()**
     -   The last moment before you are able to change anything on the screen before it's gone.
+
+# Section 19 - Local Data Persistance - User Defaults, Core Data and Realm
+
+## 253. Create a Textfield inside UIAlert to Add New Items
+
+-   We created a new alert basically and go over that. I could reference this if I need to create an alert like this
+-   After appending data to a row, you need to reload the data within the tableview using `self.tableView.reloadData()`
+
+## 254. Why do we need persistent local data storage
+
+-   This would be used for username and password I guess
+-   Going through app delegate:
+    -   didFinishLaunchingWithOptions
+        -   The first thing that is called. Happens before the view did load and anything
+    -   applicationWillResignActive
+        -   Triggered when the app is in the foregreound. When the user recieves a call or something
+        -   If they're filling out a form, they get a call, and the app loses all the data. Mad annoying
+    -   applicationDidEnterBackground
+        -   When the app dissapears off the screen
+    -   applicationWillTerminate
+        -   When the resources gets reclaimed within the app
+
+## 255. Persistent Local Data Storage using User Defaults
+
+-   User defaults allow you to access key value pairs across the app
+    -   This is saved in a P List file - Which is why you need a key value pair
+
+## 256. UserDefaults Explained
+
+-   User Defaults should not be used as a database
+-   When grabbing data from the PList, the entire PList needs to be generated
+-   This will have significant impacts on the efficency and speed of the app
+
+## 257. The Swift Singleton Object
+
+-   Only one copy of it that can be shared across the project
+-   Using the standard identifier on UserDefaults makes it so that we point to the same PList over and over again
